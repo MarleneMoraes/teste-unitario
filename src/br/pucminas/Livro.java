@@ -6,11 +6,11 @@ public class Livro {
 	private String autor;
 	private boolean emprestado;
 	
-	public Livro(int id, String titulo, String autor) {
+	public Livro(String titulo, String autor, int id, boolean emprestado) {
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
-		this.emprestado = false;
+		this.emprestado = emprestado;
 	}
 
 	public int getId() {
