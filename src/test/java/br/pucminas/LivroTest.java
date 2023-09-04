@@ -1,8 +1,9 @@
-package br.Teste;
-
-import br.pucminas.Livro;
+package test.java.br.pucminas;
 
 import org.junit.jupiter.api.Test;
+
+import main.java.br.pucminas.Livro;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LivroTest {

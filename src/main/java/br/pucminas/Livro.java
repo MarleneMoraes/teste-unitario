@@ -1,4 +1,4 @@
-package br.pucminas;
+package main.java.br.pucminas;
 
 public class Livro {
 	private int id;
