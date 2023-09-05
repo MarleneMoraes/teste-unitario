@@ -71,4 +71,7 @@ public class Biblioteca {
 		}
 		return false;
   }
+  public boolean chamaLivroExiste(Livro livro) {
+	  return livroExiste(livro);
+  }
 }
