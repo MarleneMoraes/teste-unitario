@@ -23,7 +23,6 @@ public void testRegistrarLivro(){
     assertTrue(acervo.add(livro));
 } 
 
-
 @Test
 public void testEmprestarLivroNaoDisponivel(){
     Livro livro = new Livro("Java", "Deitel", 1, false);
@@ -31,5 +30,23 @@ public void testEmprestarLivroNaoDisponivel(){
     assertFalse(livro.isEmprestado());
 } 
 
+@Test
+public void testEmprestarLivroParaMembro(){
+    Livro livro = new Livro("Java", "Deitel", 1, false);
+    Membro membro = new Membro(1, "Ana");
+    Biblioteca biblioteca = new biblioteca();
+    biblioteca.emprestarlivro(1,1);
+    assertEquals(true,livro.isEmprestado());
 
 }
+
+@Test
+public void testRetornarLivroDeMembro(){
+    Livro livro = new Livro("Java", "Deitel", 1, false);
+    Membro membro = new Membro(1, "Ana");
+    Biblioteca biblioteca = new biblioteca();
+    livro.setEmprestado(true);
+    biblioteca.retornarlivro(1,1);
+    assertEquals(false,livro.isEmprestado());
+}
+    
